@@ -1,0 +1,43 @@
+
+.serv h3
+{
+     font-size: 16px;
+     text-transform: uppercase;
+     font-family: 'Lora', serif;
+
+}
+
+.serv-content
+{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: white;
+
+}
+
+.serv-list
+{
+    padding: 10px;
+}
+
+.img1
+{
+    height: 25vh;
+    width: auto;
+}
+
+@media (min-width:992px)
+{
+.serv
+{
+    margin-bottom: 10px;
+    height: 33vh;
+    margin: 24px;
+    box-shadow: 0px 1px 1px 2px rgba(255, 255, 255, 0.26);
+}
+    #div2{
+        margin: 24px auto;
+/*        box-shadow: 0px 1px 1px 2px rgba(255, 255, 255, 0.26);*/
+    }
+ 
+}
