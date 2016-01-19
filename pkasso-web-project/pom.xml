@@ -206,7 +206,7 @@
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
-					<appName>pkasso</appName>
+					<!-- <appName>pkasso</appName> -->
 				</configuration>
 			</plugin>
 
