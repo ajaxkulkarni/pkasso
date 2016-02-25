@@ -7,10 +7,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -36,11 +34,15 @@ import com.pkasso.web.util.ImageUtil;
 @SessionAttributes("loggedIn")
 public class MainController {
 
-	private static final String REDIRECT_URL = "/pkasso-web-project/";
+	private static final String LOGGED_IN = "loggedIn";
+	private static final String MODEL_RESOURCES = "resources";
+	//private static final String ASSETS_ROOT = "/resources"; //DEV
+	private static final String ASSETS_ROOT = "../../resources/design";
 	private static final String PROJECTS_URL = "projects.htm";
+	/*API KEY :  AIzaSyDWC33tTp0Sc0kFvGrrLkQez_-p9ChwbHI*/
 	private DataUtil dataUtil;
 	private String resultMsg;
-	private boolean loggedIn;
+	//private boolean loggedIn;
 	
 	public DataUtil getDataUtil() {
 		return dataUtil;
@@ -57,18 +59,26 @@ public class MainController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/home.htm", method = RequestMethod.GET)
+	public String initHome(HttpServletRequest request, ModelMap model) {
+		return "index";
+	}
+	
 	@RequestMapping(value = "/credentials.htm", method = RequestMethod.GET)
 	public String credentials(HttpServletRequest request, ModelMap model) {
+		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "credentials";
 	}
 	
 	@RequestMapping(value = "/services.htm", method = RequestMethod.GET)
 	public String services(HttpServletRequest request, ModelMap model) {
+		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "services";
 	}
 	
 	@RequestMapping(value = "/vision.htm", method = RequestMethod.GET)
 	public String vision(HttpServletRequest request, ModelMap model) {
+		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "vision";
 	}
 	
@@ -83,14 +93,13 @@ public class MainController {
 			List<Category> categories = dataUtil.getCategories();
 			model.addAttribute("categories", categories);
 			model.addAttribute("project", new Project());
-			model.addAttribute("loggedIn", loggedIn);
+			//model.addAttribute("loggedIn", loggedIn);
 		} catch (FileNotFoundException e) {
 			model.addAttribute("error", "Error in loading file from database!");
 		} catch (IOException e) {
 			model.addAttribute("error", "File not found!");
-		} catch (InvalidFormatException e) {
-			e.printStackTrace();
-		}
+		} 
+		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "projects";
 	}
 
@@ -105,9 +114,7 @@ public class MainController {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-		} catch (InvalidFormatException e) {
-			e.printStackTrace();
-		}
+		} 
 		return view;
 	}
 
@@ -141,24 +148,26 @@ public class MainController {
 	public String adminLogin(ModelMap model) {
 		model.addAttribute("resultMsg", resultMsg);
 		resultMsg = null;
+		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "login";
 	}
 	
 	@RequestMapping(value = "/logout.htm", method = RequestMethod.GET)
 	public String adminLogin(SessionStatus status,ModelMap model) {
-		loggedIn = false;
+		model.addAttribute(LOGGED_IN, false);
 		status.setComplete();
 		resultMsg = null;
+		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "index";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public RedirectView adminLogin(@RequestParam("username") String username, @RequestParam("password") String password,ModelMap model) {
 		if("pkasso".equals(username) && "pk123".equals(password)) {
-			loggedIn = true;
-			return new RedirectView(PROJECTS_URL);
+			model.addAttribute(LOGGED_IN, true);
+			return new RedirectView("home.htm");
 		}
-		loggedIn = false;
+		model.addAttribute(LOGGED_IN, false);
 		resultMsg = "Invalid credentials!";
 		return new RedirectView("login.htm");
 	}

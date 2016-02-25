@@ -18,7 +18,7 @@
                 
                <div class="form-group col-md-12">
                     <div class="col-md-12">
-                     <label for="description">Discussion Forum :</label>
+                     <label for="description">Discussion forum for Enquiry / Feedback / Suggestions / Topic :</label>
                    </div>
                     <div class="col-md-8">
                     <textarea class="form-control" rows="5" id="description" name="description"></textarea>

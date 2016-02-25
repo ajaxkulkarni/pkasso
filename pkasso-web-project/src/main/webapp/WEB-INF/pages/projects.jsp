@@ -38,7 +38,7 @@
 		var controlCount = 0;
 		 $("#addFiles").click(function() {
 			 	controlCount++;
-			 	if(controlCount > 4) {
+			 	if(controlCount > 5) {
 			 		alert("Enough controls already!");
 			 		return;
 			 	}
@@ -67,7 +67,7 @@
                 $("#projectImage").attr("src","files/" + data.slides[0].id);
                 $("#projectCategory").html(data.categoryName);
                 $("#projectId").attr("value",data.id);
-                //alert(data.id)
+                //alert(data.slides)
                 var appendString = "";
                 $.each(data.slides,function(i,slide){
                 	//alert(slide);
@@ -79,7 +79,7 @@
                 	appendString = appendString + "<div class=\"item\"><img src=\"files/" + slide.id +"\" alt=\"slide2\"></div>";
                 	}
                 });
-                //alert(appendString);
+                alert(appendString);
                 $("#slider").html(appendString);
                 
             },
@@ -102,7 +102,7 @@
         <div class="project_sub_div">
                 <label class="project_label">${category.name}</label><br/>
                 <c:forEach var="project" items="${category.projects}">
-                	<img src="files/${project.slides[0].id}"  alt="resi1" data-toggle="modal" data-target="#myModal1" onclick="onPreview(${project.id})" class="project_img"/>
+                	<img src="files/${project.slides[0].id}"  alt="resi1" data-toggle="modal" data-target="#${project.id}"  class="project_img"/>
                 </c:forEach>
                 <c:if test="${loggedIn}">
                 	<input type="button" class="project_label2" value="Add New" data-toggle="modal" data-target="#editModal" onclick="setCategory('${category.name}')">
@@ -113,21 +113,22 @@
     
     <!-- End OF Div trigger modal -->
 
-
-       <!-- Modal -->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<c:forEach items="${categories}" var="category">
+          <c:forEach var="project" items="${category.projects}">	 	
+       		<!-- Modal -->
+            <div class="modal fade" id="${project.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 id="projectCategory" class="modal-title" style="color:black;" id="myModalLabel">Residensitial</h4>
+                    <h4 id="projectCategory" class="modal-title" style="color:black;" id="myModalLabel">${project.categoryName}</h4>
                   </div>
                   <c:if test="${loggedIn}">
-                  <form action="delete" method="post">
-                		<input type="hidden" id= "projectId" name="projectId" />
+                  	<form action="delete" method="post">
+                		<input type="hidden" id= "projectId" name="projectId" value="${project.id}" />
                 		<input type="submit" value="Delete"/> 
                 	</form>
-                	</c:if>
+                </c:if>
                   <div class="modal-body">
 					 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" id="div2">
 					<!-- Indicators -->
@@ -139,7 +140,22 @@
 					
               		<!-- Wrapper for slides -->
                     <div id="slider" class="carousel-inner">
-                    	<!-- Slides will be loaded dynamically here -->
+                    <c:set var="first" value="true"></c:set>
+                    <!-- Slides will be loaded dynamically here -->
+                    <c:forEach var="slide" items="${project.slides}" >
+                    	<c:if test="${first == true }">
+                    		<div class="item active">
+                			<img src="files/${slide.id}"  alt="resi1"/>
+                			</div>
+                			<c:set var="first" value="false"></c:set>
+                    	</c:if>
+                    	<c:if test="${first == false }">
+                    		<div class="item">
+                			<img src="files/${slide.id}"  alt="resi1"/>
+                			</div>
+                    	</c:if>
+                    	
+                	</c:forEach>
                    	</div>
 
               		<!-- Controls -->
@@ -151,14 +167,15 @@
                     </a>
                 </div>
  					<!-- <img  id="projectImage" src="images/projects/project1.jpg"  alt="resi1" class="img_display"/> -->
-                      <label id="projectName" class="project_label2">Project Name</label><br/>
-                      <label id="clientName" class="project_label2">Client Name</label><br/>
-                      <label id="projectDescription" class="project_label2">Description</label>
+                      <label id="projectName" class="project_label2">${project.name}</label><br/>
+                      <label id="clientName" class="project_label2">${project.clientName}</label><br/>
+                      <label id="projectDescription" class="project_label2">${project.description}</label>
                   </div>
                 </div>
               </div>
             </div>
-
+		</c:forEach>
+		</c:forEach>
         <!--  End OF Modal -->
         
         <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -200,18 +217,6 @@
             </div>
         
     <%@include file="footer.jsp" %>
-	<!-- jQuery -->
-    <script src="<c:url value="/resources/js/jquery.js"/>"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 1700 //changes the speed
-    })
-    </script>
 </body>
 
 </html>

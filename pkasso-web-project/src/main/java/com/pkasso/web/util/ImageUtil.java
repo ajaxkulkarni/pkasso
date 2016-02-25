@@ -13,8 +13,9 @@ import com.pkasso.web.dao.domain.Slide;
 
 public class ImageUtil {
 	
-	private static final String ROOT_IMAGES_PATH = "data/Images/";
-
+	private static final String ROOT_IMAGES_PATH = "/home/itrmitra/Data/Images/";
+	//private static final String ROOT_IMAGES_PATH = "F:\\Resoneuronance\\Websites\\PKASSO Website\\Data";
+	
 	public static void processImages(Project project) throws IOException {
 
 		for (MultipartFile file : project.getFiles()) {

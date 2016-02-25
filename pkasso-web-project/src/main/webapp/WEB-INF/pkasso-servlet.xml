@@ -22,25 +22,6 @@
 	<mvc:resources mapping="/resources/**" location="/resources/design/" />
 
 	
-	<!-- <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
-		<property name="mappings">
-			<props>
-				<prop key="/resources/**">welcomeController</prop>
-				<prop key="/">welcomeController</prop>
-			</props>
-		</property>
-		<property name="interceptors">
-			<list>
-				<ref bean="executeTimeInterceptor" />
-			</list>
-		</property>
-	</bean>
-	
-	<bean id="welcomeController" 
-                  class="com.pkasso.web.controller.MainController" />
- 
-	<bean id="executeTimeInterceptor" 
-                 class="com.pkasso.web.util.SecurityInterceptor" /> -->
 	
 
 	<bean
@@ -59,7 +40,8 @@
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.sqlite.JDBC" />
-        <property name="url" value="jdbc:sqlite:data/mydb.db" />
+        <!-- <property name="url" value="jdbc:sqlite:data/mydb.db" /> -->
+        <property name="url" value="jdbc:sqlite:/home/itrmitra/Data/mydb.db" />
         <property name="username" value="" />
         <property name="password" value="" />
     </bean>

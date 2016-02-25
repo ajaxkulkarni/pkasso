@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
-import com.csvreader.CsvReader;
-import com.csvreader.CsvWriter;
 import com.pkasso.web.bo.domain.Category;
 import com.pkasso.web.bo.domain.Project;
 import com.pkasso.web.dao.domain.Slide;
@@ -25,7 +22,7 @@ public class DataUtil {
 	private static final String COLUMN_IMG_ID = "Img ID";
 	private static final String COLUMN_IMAGE_PATH = "Image path";
 	private static final String COLUMN_DESCRIPTION = "Description";
-	private static final String COLUMN_NAME = "Name";*/
+	private static final String COLUMN_NAME = "Name";
 	
 	private static final int COLUMN_NAME = 0;
 	private static final int COLUMN_IMG_ID = 1;
@@ -33,7 +30,7 @@ public class DataUtil {
 	private static final int COLUMN_DESCRIPTION = 3;
 	private static final int COLUMN_CLIENT_NAME = 4;
 	private static final int COLUMN_IMAGE_PATH = 0;
-	private static final int COLUMN_PROJECT_NAME = 2;
+	private static final int COLUMN_PROJECT_NAME = 2;*/
 	
 	private static final String IMAGES_SHEET = "Images";
 	private static final String PROJECTS_SHEET = "Projects";
@@ -43,7 +40,7 @@ public class DataUtil {
 	private DBUtil dbUtil;
 	
 
-	public List<Category> getCategories() throws FileNotFoundException, IOException, InvalidFormatException {
+	public List<Category> getCategories() throws FileNotFoundException, IOException {
 
 		List<Category> categories = new ArrayList<Category>();
 		List<com.pkasso.web.dao.domain.Category> categoriesData = dbUtil.getCategories();
@@ -59,7 +56,7 @@ public class DataUtil {
 		return categories;
 	}
 
-	private void getProjects(Category category) throws FileNotFoundException, IOException, InvalidFormatException {
+	private void getProjects(Category category) throws FileNotFoundException, IOException {
 		/*CsvReader reader = new CsvReader(CSV_PATH + PROJECTS_SHEET + ".csv");
 		//reader.readHeaders();
 		while (reader.readRecord()) {
@@ -105,7 +102,8 @@ public class DataUtil {
 		project.setSlides(dbUtil.getSlides(id));
 	}
 
-	public void addProject(Project project) throws FileNotFoundException, IOException, InvalidFormatException {
+	
+	public void addProject(Project project) throws FileNotFoundException, IOException {
 		/*CsvWriter csvOutput = new CsvWriter(new FileWriter(CSV_PATH + PROJECTS_SHEET + ".csv", append), ',');
 
 		csvOutput.write(project.getName());
@@ -139,6 +137,7 @@ public class DataUtil {
 		return;
 	}
 
+	/*
 	private static int processImages(Project project, boolean append) throws IOException {
 		CsvWriter csvOutput = new CsvWriter(new FileWriter(CSV_PATH + IMAGES_SHEET + ".csv", append), ',');
 		String imgId = "";
@@ -154,16 +153,16 @@ public class DataUtil {
 			nextId = imageId + 1;
 		}
 		reader.close();
-		/*for(String slide:project.getSlides()) {
+		for(String slide:project.getSlides()) {
 			csvOutput.write(slide);
 			csvOutput.write(String.valueOf(nextId));
 			csvOutput.write(project.getName());
 			csvOutput.endRecord();
 			nextId++;
-		}*/
+		}
 		csvOutput.close();
 		return (imageId+1);
-	}
+	}*/
 
 	public InputStream getImage(int slideId) throws IOException {
 		Slide slide = dbUtil.getSlide(slideId);
@@ -173,7 +172,7 @@ public class DataUtil {
 		return new FileInputStream(slide.getImagePath());
 	}
 
-	public static Project getProjects(String projectName) throws IOException {
+	/*public static Project getProjects(String projectName) throws IOException {
 		Project project = new Project();
 		CsvReader reader = new CsvReader(CSV_PATH + PROJECTS_SHEET + ".csv");
 		//reader.readHeaders();
@@ -195,7 +194,7 @@ public class DataUtil {
 		project.setCategoryName(reader.get(COLUMN_CATEGORY));
 		project.setClientName(reader.get(COLUMN_CLIENT_NAME));
 		//setProjectSlides(project);
-	}
+	}*/
 
 	public void deleteProject(int projectId) {
 		dbUtil.deleteProject(projectId);
