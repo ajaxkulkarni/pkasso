@@ -66,7 +66,7 @@
         Pune - 411038.<br/>
             
             <label>Contact No: 020 - 25435847</label><br/>
-            <label>Email: pkasso.arch1@gmail.com</label>
+            <label>Email: "pkasso.adm@gmail.com</label>
         </p>
     </div>
 

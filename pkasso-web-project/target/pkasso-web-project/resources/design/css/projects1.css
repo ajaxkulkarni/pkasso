@@ -1,3 +1,11 @@
+.projects_div{
+ background-image: url(../images/background.jpg);
+       	
+  		
+	height: 570%;	
+}
+
+
 
 .projects_div1{
     width: 100%;
@@ -115,3 +123,8 @@
 }
 
 }
+
+.footer{
+	color:white;
+}
+} 

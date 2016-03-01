@@ -65,6 +65,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav  navbar-nav">
+                            <li> <a href="home.htm">Home</a></li>
                             <li> <a href="vision.htm">vision</a></li>
                             <li><a href="services.htm">Services</a></li>
                             <li> <a href="projects.htm">Projects</a></li>
@@ -74,13 +75,13 @@
                             <li><a href="logout.htm">LOGOUT</a></li>
                             </c:if>
                     </ul>
-                
+            
                 </div>
             <!-- /.navbar-collapse -->
         </div>
           
         </div>
      </div>
-
+    </div>
 </body>
 </html>

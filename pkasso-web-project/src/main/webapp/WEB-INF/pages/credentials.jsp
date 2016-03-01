@@ -30,7 +30,7 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
- 	</div>
+ <div class="projects_div" id="projects_div">
         <div class="container credential_div">
             <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     Awards and Appreciation</h3>
@@ -114,6 +114,31 @@
                 </div>
               </div>
             </div>
-<%@include file="footer.jsp" %>
+              <footer class="container-fluid" id="div3">
+            <div class="row">
+                <div class="col-md-7 col-xs-12" id="con1">
+                <div class="footer">
+                    <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
+                </div>
+                </div>
+                    
+                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+    
+                    <ul>
+                        <div class="col-md-4 col-xs-12" id="con">
+                        <li></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a></li></div>
+                    </ul>
+                     
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+</div>
 </body>
 </html>

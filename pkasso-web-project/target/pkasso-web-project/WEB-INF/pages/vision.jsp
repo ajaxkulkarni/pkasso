@@ -20,30 +20,28 @@
 <body>
 
 <%@include file="header.jsp" %>
-
 <div class="container" id="div2"> 
-    <div class="container vision-cont">
+  
  
         <div class="col-md-12">
                 <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     Vision</h3>
         </div>
-    </div>
-    
-    <div class="container vision-cont">
+   
+  
     
         <div class="col-md-12">
                 <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     Approach</h3>
         </div>
-    </div>
     
-    <div class="container vision-cont">
+    
+    
         <div class="col-md-12">
                 <h3><span class="glyphicon glyphicon-chevron-right"></span>
                 Team</h3>
         </div>
-    </div>
+  
    
 </div>
 

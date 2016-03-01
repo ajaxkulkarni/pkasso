@@ -26,6 +26,7 @@
     <link href="<c:url value="/resources/css/font-awesome.css"/>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     <link href="<c:url value="/resources/css/projects1.css"/>" rel="stylesheet">
+     
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,700,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <%-- <script type="text/javascript" src="<c:url value="/resources/js/jquery-1.11.2.min.js"/>"></script> --%>
@@ -210,13 +211,41 @@
                       	</tr>
                       	<tr><td><input type="submit" class="project_label2" value="Save"/></td></tr>
                       </table>
+                
                    </form>
                   </div>
                 </div>
               </div>
+           </div>
+          <footer class="container-fluid" id="div3">
+            <div class="row">
+                <div class="col-md-7 col-xs-12" id="con1">
+                <div class="footer">
+                    <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
+                </div>
+                </div>
+                    
+                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+    
+                    <ul>
+                        <div class="col-md-4 col-xs-12" id="con">
+                        <li></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a></li></div>
+                    </ul>
+                     
+                </div>
             </div>
-        
-    <%@include file="footer.jsp" %>
+            <!-- /.row -->
+        </footer>
+                
+     
+   </div>
+   
 </body>
 
 </html>
