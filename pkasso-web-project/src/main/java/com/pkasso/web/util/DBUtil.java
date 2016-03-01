@@ -80,6 +80,16 @@ public class DBUtil {
 		session.close();
 		return project.get(0).getId();
 	}
+	
+	public List<Project> getProjects() {
+		Session session = this.sessionFactory.openSession();
+		List<com.pkasso.web.dao.domain.Project> project = session.createQuery("from Project order by id DESC").list();
+		if(project == null) {
+			return null;
+		}
+		session.close();
+		return project;
+	}
 
 	public List<Slide> getSlides(int projectId) {
 		Session session = this.sessionFactory.openSession();

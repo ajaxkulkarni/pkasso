@@ -8,9 +8,7 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
- </div>
-    
-               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" id="div2">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" id="div2">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

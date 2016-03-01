@@ -128,7 +128,7 @@
                 		<input type="hidden" id= "projectId" name="projectId" value="${project.id}" />
                 		<input type="submit" value="Delete"/> 
                 	</form>
-                </c:if>
+                  </c:if>
                   <div class="modal-body">
 					 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" id="div2">
 					<!-- Indicators -->

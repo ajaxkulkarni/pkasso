@@ -66,6 +66,8 @@ public class MainController {
 	
 	@RequestMapping(value = "/credentials.htm", method = RequestMethod.GET)
 	public String credentials(HttpServletRequest request, ModelMap model) {
+		List<Project> categories = dataUtil.getCredentials();
+		model.addAttribute("projects", categories);
 		model.addAttribute(MODEL_RESOURCES, ASSETS_ROOT);
 		return "credentials";
 	}
@@ -117,6 +119,7 @@ public class MainController {
 		} 
 		return view;
 	}
+	
 
 	@RequestMapping(value = "/files/{file_name}", method = RequestMethod.GET)
 	public void getFile(@PathVariable("file_name") int fileName, HttpServletResponse response, ModelMap model) {
