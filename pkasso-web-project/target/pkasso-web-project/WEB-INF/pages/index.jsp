@@ -8,6 +8,7 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
+
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" id="div2">
               <!-- Indicators -->
              
@@ -22,9 +23,7 @@
                             </div>
                             <div class="item">
                                     <img src="<c:url value="/resources/images/slide_show_05.jpg"/>" alt="slide3">
-                                    <div class="carousel-caption">
-                                
-                                    </div>
+                                    
                             </div>
                     </div>
 

@@ -10,7 +10,7 @@
 <%@include file="header.jsp" %>
 </div>
     
-    
+    <br/>
          <div class="container row">
              <form action="" method="post">
                  
@@ -57,6 +57,7 @@
     
            </div>
     
+     <div class="col-md-6 col-xs-12">
     <div class="container address_div">
         <label>Contact US</label>
         <p>Prashant Kulkarni & Associates,<br/>
@@ -69,8 +70,8 @@
             <label>Email: "pkasso.adm@gmail.com</label>
         </p>
     </div>
-
-
+</div>
+<br/>
 <%@include file="footer.jsp" %>
 </body>
 </html>

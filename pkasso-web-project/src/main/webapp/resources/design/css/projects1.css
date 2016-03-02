@@ -1,6 +1,11 @@
 .projects_div{
- background-image: url(../images/background.jpg);
- height: 570%;	
+ 
+ 	height: 450px;
+    background:transparent;
+    overflow: auto;
+    margin: 24px auto;
+    font-family: 'Lora', serif;
+    color: white;
 }
 
 
@@ -12,7 +17,7 @@
     color:white;
     font-family: 'Lora', serif;
     padding: 10px;
-    height: 600px;
+    height: 100%;
     overflow: auto;   
     margin:24px;
 }

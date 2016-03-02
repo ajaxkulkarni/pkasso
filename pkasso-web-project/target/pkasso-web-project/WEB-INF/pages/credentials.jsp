@@ -30,7 +30,7 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
- 
+ <div class="projects_div" id="projects_div">
         <div class="container credential_div">
             <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     Awards and Appreciation</h3>
@@ -114,6 +114,7 @@
                 </div>
               </div>
             </div>
+             </div>
               <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">

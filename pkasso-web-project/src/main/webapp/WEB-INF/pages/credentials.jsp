@@ -114,6 +114,7 @@
                 </div>
               </div>
             </div>
+             </div>
               <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">
@@ -139,6 +140,6 @@
             </div>
             <!-- /.row -->
         </footer>
-</div>
+
 </body>
 </html>

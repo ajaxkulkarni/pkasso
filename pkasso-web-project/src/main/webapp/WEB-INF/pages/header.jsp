@@ -24,7 +24,17 @@
     <link href="<c:url value="/resources/css/font-awesome.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/font-awesome.min.css"/>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-
+<script>
+ $(document).ready(function(){
+    $('div#services_menu li').click(
+        function(e)
+        {
+            $('div#services_menu li').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        }
+    );
+});   
+</script>
 </head>
 <body>
 
@@ -63,6 +73,7 @@
                             </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->
+                <div id="services_menu">
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav  navbar-nav">
                             <li> <a href="home.htm">Home</a></li>
@@ -77,9 +88,9 @@
                     </ul>
             
                 </div>
+                </div>
             <!-- /.navbar-collapse -->
-        </div>
-          
+      
         </div>
      </div>
     </div>
