@@ -8,12 +8,14 @@ body
 }
 
 .forum,.address_div{
-    margin: 32px auto;
+    margin: 20px 120px;
 }
 
 label{
     font-family: 'Lora', serif;
     font-weight: 400;
+    font-size: 18px;
+    
 }
 
 .button{

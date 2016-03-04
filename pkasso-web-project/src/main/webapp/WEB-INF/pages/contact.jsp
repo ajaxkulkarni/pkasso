@@ -12,7 +12,7 @@
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-     <link href="<c:url value="/resources/css/vision.css"/>" rel="stylesheet">
+     <link href="<c:url value="/resources/css/contact.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/styles.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/font-awesome.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/font-awesome.min.css"/>" rel="stylesheet">
@@ -87,37 +87,37 @@
          <div class="container row">
              <form action="" method="post">
                  
-            <div class="forum col-md-6">
+            <div class="forum col-md-12">
                 
                <div class="form-group col-md-12">
                     <div class="col-md-12">
                      <label for="description">Discussion forum for Enquiry / Feedback / Suggestions / Topic :</label>
                    </div>
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                     <textarea class="form-control" rows="5" id="description" name="description"></textarea>
                    </div>
                </div>
     
             <div class="form-group col-md-12">
-                   <div class="col-md-2">
+                   <div class="col-md-12">
                    <label for="name"> Name :</label>
                    </div>
-                   <div class="col-md-6">
+                   <div class="col-md-4">
                    <input type="text" autocomplete="name" class="form-control" name="name" id="name" required>
                    </div>
               </div>
 
                
                <div class="form-group col-md-12">
-                   <div class="col-md-2">
+                   <div class="col-md-12">
                    <label for="email"> Email :</label>
                    </div>
-                   <div class="col-md-6">
+                   <div class="col-md-4">
                    <input type="email" autocomplete="email" class="form-control" name="email" id="email" required>
                    </div>
                </div>
                <div class="form-group col-md-12">
-                   <div class="col-md-2">
+                   <div class="col-md-12">
                    </div>
                     <div class="col-md-10 col-xs-10">
                      <input type="reset" class="button" name="reset" value="Clear">
@@ -130,7 +130,7 @@
     
            </div>
     
-     <div class="col-md-6 col-xs-12">
+     <div class="col-md-12 col-md-10">
     <div class="container address_div">
         <label>Contact US</label>
         <p>Prashant Kulkarni & Associates,<br/>
@@ -139,12 +139,34 @@
         Paud Phata, Erandwane ,<br/>
         Pune - 411038.<br/>
             
-            <label>Contact No: 020 - 25435847</label><br/>
-            <label>Email: "pkasso.adm@gmail.com</label>
+            Contact No: 020 - 25435847<br/>
+           Email: "pkasso.adm@gmail.com
         </p>
     </div>
 </div>
-<br/>
-<%@include file="footer.jsp" %>
+      <footer class="container-fluid" id="div3">
+            <div class="row">
+                <div class="col-md-7 col-xs-12" id="con1">
+                    <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
+                </div>
+                    
+                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+    
+                    <ul>
+                        <div class="col-md-4 col-xs-12" id="con">
+                        <li></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a></li></div>
+                    </ul>
+                     
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>  
+
 </body>
 </html>
