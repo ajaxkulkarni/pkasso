@@ -8,7 +8,7 @@
 <head>
  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Vision</title>
+<title>PKASSO | Vision</title>
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
