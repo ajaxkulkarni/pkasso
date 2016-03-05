@@ -8,7 +8,7 @@
 <head>
  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>PKASSO | Vision</title>
+<title>PKASSO | Projects</title>
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -17,6 +17,11 @@
     <link href="<c:url value="/resources/css/font-awesome.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/font-awesome.min.css"/>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> 
+     
+    <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		var controlCount = 0;
@@ -260,7 +265,8 @@
               </div>
            </div>
            </div>
-          <footer class="container-fluid" id="div3">
+           
+       <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">
                 <div class="footer">
@@ -282,13 +288,13 @@
                     </ul>
                      
                 </div>
-          
+            </div>
             <!-- /.row -->
         </footer>
                 
      
-   </div>
    
+   </div>
 </body>
 
 </html>

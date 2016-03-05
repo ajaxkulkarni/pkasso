@@ -6,8 +6,7 @@ body
 { 
 	 background-image: url(../images/body_bg.jpg);
        	color: rgba(252, 249, 249, 0.87);
-  		
-	height: 100vh;
+  		overflow: auto; 
 	
 	
     /*background-color: #141517;

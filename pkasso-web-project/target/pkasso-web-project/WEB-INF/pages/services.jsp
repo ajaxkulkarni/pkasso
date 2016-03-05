@@ -17,7 +17,8 @@
     <link href="<c:url value="/resources/css/font-awesome.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/font-awesome.min.css"/>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> 
-
+ 
+   
 </head>
 <body>
 <!-- Navigation -->
