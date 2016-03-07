@@ -55,6 +55,12 @@
 
 .project_label2{
 	font-size:18px;
+	color: white;
+ font-family: 'Lora', serif; 
+}
+
+.project_label3{
+	font-size:18px;
 	color: #1C2C39;
  font-family: 'Lora', serif; 
 }
@@ -116,5 +122,7 @@
     width: 150px;
     margin: 10px 24px;
 }
-
+}
+.footer{
+	color:white;
 }

@@ -227,7 +227,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 id="projectCategory" class="project_label2" id="myModalLabel">Add New Project</h4>
+                    <h4 id="projectCategory" class="project_label3" id="myModalLabel">Add New Project</h4>
                   </div>
                   <div class="modal-body">
                   <form action="addProject" method="post" enctype="multipart/form-data">
@@ -236,8 +236,9 @@
                   		 	<td><label id="projectName" class="project_label2">Project Name</label></td>
                       		<td><input type="text" class="project_label2" name="name" required="required"/></td>
                   		</tr>
+                  		<br/>
                   		<tr>
-                  		 	<td><label id="clientName" class="project_label2">Client Name</label></td>
+                  		 	<td><label id="clientName" class="project_label2">Client Name</label></td><br/>
                       		<td><input type="text" class="project_label2" name="clientName" required="required"/></td>
                   		</tr>
                      	<tr>
@@ -261,7 +262,8 @@
               </div>
            </div>
            </div>
-           
+            </div>
+       
        <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">
@@ -288,10 +290,7 @@
             <!-- /.row -->
         </footer>
                 
-     
-   
-   </div>
-</body>
+ </body>
 
 </html>
     
