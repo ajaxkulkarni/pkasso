@@ -9,8 +9,8 @@
  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>PKASSO | Services</title>
-<link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
-    
+
+    <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
      <link href="<c:url value="/resources/css/services.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/styles.css"/>" rel="stylesheet">
@@ -18,7 +18,7 @@
     <link href="<c:url value="/resources/css/font-awesome.min.css"/>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> 
  
-   
+    
 </head>
 <body>
 <!-- Navigation -->
@@ -45,13 +45,13 @@
                      
                 </div>
                         
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                  <p id="h1name">PRASHANT KULKARNI & ASSOCIATES</p>        
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <hr size="0">
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <p id="h2name">SHAPING EXCELLENCE SINCE 1992</p>
                             </div>
             
@@ -147,6 +147,28 @@
     
     </div>
 
-<%@include file="footer.jsp" %>
+<footer class="container-fluid" id="div3">
+            <div class="row">
+                <div class="col-md-7 col-xs-12" id="con1">
+                    <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
+                </div>
+                    
+                <div class="col-md-4 col-xs-12 pull-left" id="social_icon">
+    
+                    <ul>
+                        <div class="col-md-4 col-xs-12" id="con">
+                        <li></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a></li></div>
+                        <div class="col-md-2 col-xs-4">
+                            <li><a href="http://facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a></li></div>
+                    </ul>
+                     
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>  
 </body>
 </html>

@@ -29,3 +29,91 @@
 */
 
 
+footer
+{
+    /*border-top: 1px solid #585858;*/
+    font-size: 14px;
+    padding-top:5px;
+    margin-bottom: 0px;
+    margin-top:5px; 
+    color: #e6e6e6;
+    font-family: 'Lora', serif;
+}
+
+/*End Of Footer CSS*/
+
+
+
+
+/*Social Icons*/
+
+
+ #social_icon ul
+{
+        position: absolute;
+}
+
+ 
+#social_icon ul li
+{
+    
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+
+#con
+{
+    padding-top: 10px;
+    font-size: 14px;
+
+
+}
+
+#div3{
+	margin-left: 60px;
+}
+
+
+#con1
+{
+    padding-top: 10px;
+    font-size: 14px;
+/*    margin-left: 5px;*/
+
+}
+
+#social_icon ul li a
+{
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 15%;
+    
+}
+ 
+#social_icon ul li a i 
+{
+    margin-right: 10px;
+    padding-top: 15%;
+    opacity: 0.8;
+    
+}
+ 
+/*To add in a hover state transition, a bit more CSS*/
+
+#social_icon ul li a i 
+{
+    transition: all 0.2s ease-in-out;
+}
+
+#social_icon  ul li a i:hover
+{
+    opacity: 2;
+}
+
+
+/*End of Social Icons CSS*/
+

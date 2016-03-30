@@ -51,13 +51,13 @@
                      
                 </div>
                         
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                  <p id="h1name">PRASHANT KULKARNI & ASSOCIATES</p>        
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <hr size="0">
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <p id="h2name">SHAPING EXCELLENCE SINCE 1992</p>
                             </div>
             
@@ -89,55 +89,55 @@
    <div class="container" id="div2"> 
     <div class="container vision-cont">
  
-        <div class="col-md-12">
+        <div class="col-md-11">
                 <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     vision</h3> 
     
-					         <p>We the Pkasso believe that, we are in this innovative field of Architecture for designing creative & environmentally 
-         oriented spaces for the betterment in the quality of individuals life on this Earth!</p>
+					         <p>We the Pkasso believe that, we are in this innovative field of Architecture for designing creative and environmentally 
+         oriented spaces<br/> for the betterment in the quality of individuals life on this Earth!</p>
          
 <p>Our great leader MAHATMA GANDHI philosophy of self reliance has always been our Ideals which leads us in following simple 
 methodologies with creative, rational  and innovative approach in providing Sustainable Architectural Design solutions of any 
 complexity!  His thoughts also lead to enable us to liberal and contextual thinking and democratic way in decision making!</p>   
 
 <p>Continual improvement in Human Recourses for leadership qualities, working style, technological knowledge and modernization has 
-always been the key in the Success of Pkasso. We the Pkasso has never considered ourselves as a commercial establishment but an 
-Institute where Application Based Research is constantly practicing for the innovative, creative, energy efficient and therefore 
+always been the key in the Success of Pkasso. We the Pkasso has never considered ourselves as acommercial establishment but an 
+Institute where Application Based Research is constantly practicing for the innovative,creative, energy efficient and therefore 
 sustainable Design Solutions!</p>    
 
-<p>We have developed and keep on developing ourselves in understanding the language of the site , environmental conditions, the 
+<p>We have developed and keep on developing ourselves in understanding the language of the site, environmental condition the 
 prospective Occupier life style and Law of the Land before, during and after the accomplishment of any Architectural and Interior 
 Designing Project. We shall always be very sensitive, responsive to all these attributes while Delivering Excellence!<p>
 
 <p>Pkasso has been believed in Team Work not limited to only creative and passionate team of our Architects, Designers, Engineers and 
-Associates but also all those who contribute in making our dreams of such Creative spaces truly Delivered in Excellence includes our 
+Associates but also all those who contribute in making our dreams of such Creative spaces truly Delivered <br/>in Excellence includes our 
 Esteemed Clients and their Contractors too! Our 300 plus Successfully Delivered Projects, appreciations in the form of various 
 Empanelments in the Banking, Government / Semi Government Sectors, long term professional tie ups with our esteemed clients and constant 
 growth in our Client base  stand testimony to this fact.</p>
 
-<p>Pkasso, has always been and keep on setting its Path and foot prints of a Idealistic style of professional practice in this field 
+<p>Pkasso, has always been and keep on setting its Path and foot prints of a Idealistic style of professional practice in this<br/> field 
 by way of Land Marks of its Architectural creative designs! 
        </div> </div>
    
     <div class="container vision-cont">
     
-        <div class="col-md-12">
+        <div class="col-md-11">
                 <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     Mission</h3>
  <p> We as PKASSO Endeavour to <strong>Creative Architectural designs evolving spatial & sustainable environment to live in.</strong> Pkasso leads in 
- Delivering Excellence in every project, by fulfilling the requisites of quality designs and it’s implementation in scheduled cost 
+ Delivering Excellence in every project, by fulfilling the requisites of quality designs and its implementation in scheduled cost 
  and time, as a part of Social responsibility!</p>
         </div>
     </div>
    
     
     <div class="container vision-cont">
-        <div class="col-md-12">
+        <div class="col-md-11">
                 <h3><span class="glyphicon glyphicon-chevron-right"></span>
                 Team</h3>
  <p>The team Pkasso is lead by Ar.Prashant Kulkarni, Preincipal Architect and CEO and the founder member. We are the team of 
  enthusiastic and energetic technical and non technical persons comprising of Juniors and Seniors having their field of expertise in 
- varied field and capacity, ever ready with creative and innovative thoughts in the interest of our Esteemed Clientele and valued 
+ varied field and capacity, ever ready with creative and innovative thoughts in the interest of our Esteemed Clientele and valued<br/> 
  Projects. 
  </p>
  
@@ -150,14 +150,13 @@ by way of Land Marks of its Architectural creative designs!
     
   
     
-        <!-- Footer -->
-        <footer class="container-fluid" id="div3">
+         <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">
                     <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
                 </div>
                     
-                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+                <div class="col-md-4 col-xs-12 pull-left" id="social_icon">
     
                     <ul>
                         <div class="col-md-4 col-xs-12" id="con">
@@ -171,9 +170,9 @@ by way of Land Marks of its Architectural creative designs!
                     </ul>
                      
                 </div>
-            </div>
+            </div> 
             <!-- /.row -->
-        </footer>
+        </footer>  
   
     <!-- /.container -->
 

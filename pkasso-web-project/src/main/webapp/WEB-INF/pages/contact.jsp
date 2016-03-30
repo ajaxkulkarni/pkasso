@@ -49,13 +49,13 @@
                      
                 </div>
                         
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                  <p id="h1name">PRASHANT KULKARNI & ASSOCIATES</p>        
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <hr size="0">
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <p id="h2name">SHAPING EXCELLENCE SINCE 1992</p>
                             </div>
             
@@ -134,8 +134,8 @@
     
            </div>
     
-     <div class="col-md-12 col-md-10">
-    <div class="container address_div">
+     <div class="col-md-12">
+    <div class="container address_div1">
         <label>Contact US</label>
         <p>Prashant Kulkarni & Associates,<br/>
         2/18, purushotam Appt.,<br/>
@@ -154,7 +154,7 @@
                     <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
                 </div>
                     
-                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+                <div class="col-md-4 col-xs-12 pull-left" id="social_icon">
     
                     <ul>
                         <div class="col-md-4 col-xs-12" id="con">

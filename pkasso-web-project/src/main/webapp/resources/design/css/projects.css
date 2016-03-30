@@ -25,7 +25,7 @@
     height: 800px;
     background:transparent;
     overflow: auto;
-    margin: 24px 0px;
+    margin: 24px 110px;
     font-family: 'Lora', serif;
     color: white;
 
@@ -124,5 +124,9 @@
 }
 }
 .footer{
-	color:white;
+	
+}
+
+#div3{
+	margin-left: 100px;
 }

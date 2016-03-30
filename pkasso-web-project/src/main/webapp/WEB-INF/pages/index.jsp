@@ -51,13 +51,13 @@
                      
                 </div>
                         
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                  <p id="h1name">PRASHANT KULKARNI & ASSOCIATES</p>        
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <hr size="0">
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <p id="h2name">SHAPING EXCELLENCE SINCE 1992</p>
                             </div>
             
@@ -66,7 +66,7 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav  navbar-nav">
                             <li> <a href="home.htm">Home</a></li>
-                            <li> <a href="vision.htm">vision / Mission</a></li>
+                            <li> <a href="vision.htm">vision/Mission</a></li>
                             <li><a href="services.htm">Services</a></li>
                             <li> <a href="projects.htm">Projects</a></li>
                             <li><a href="credentials.htm">Credentials</a></li>
@@ -112,13 +112,13 @@
                     </a>
                 </div> <!-- Carousel -->
         
-        <footer class="container-fluid" id="div3">
+       <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">
                     <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
                 </div>
                     
-                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+                <div class="col-md-4 col-xs-12 pull-left" id="social_icon">
     
                     <ul>
                         <div class="col-md-4 col-xs-12" id="con">
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <!-- /.row -->
-        </footer>         
+        </footer>     
                 
 
 </body>

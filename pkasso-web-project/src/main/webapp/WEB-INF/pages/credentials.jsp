@@ -48,13 +48,13 @@
                      
                 </div>
                         
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                  <p id="h1name">PRASHANT KULKARNI & ASSOCIATES</p>        
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <hr size="0">
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <p id="h2name">SHAPING EXCELLENCE SINCE 1992</p>
                             </div>
             
@@ -83,7 +83,9 @@
 
 
  <div class="projects_div" id="projects_div">
+ 
         <div class="container credential_div">
+        <div class="col-md-11">
             <h3><span class="glyphicon glyphicon-chevron-right"></span>
                     Awards and Appreciation</h3>
             <p>PKASSO has successfully designed and got executed projects of various nature, scale for our esteemed clients and for their
@@ -166,6 +168,7 @@
                 </div>
               </div>
             </div>
+             </div>
              </div>
               <footer class="container-fluid" id="div3">
             <div class="row">

@@ -11,7 +11,7 @@ body
 	
     /*background-color: #141517;
     height:100vh;
-    color: rgba(252, 249, 249, 0.87);*/
+   */
 }
 
 /*Navbar CSS*/
@@ -77,7 +77,7 @@ body
 .navbar-default .navbar-nav>li>a
 {
          color:#ffffff;
-        margin: 0px 0px 0 10px;
+        margin: 0px 0px 0px 10px;
         background-color:transparent;
 }
 
@@ -127,7 +127,8 @@ body
 /*    padding-left: 20px;*/
 }
 .hdiv{
-    margin: 0px 20px;   
+    margin-left: 20px;   
+   
 }
 hr{
     margin: 5px 5px 5px 0; 
@@ -174,6 +175,11 @@ footer
     font-size: 14px;
 
 }
+
+#div3{
+	margin-left: 160px;
+}
+
 
 #con1
 {
@@ -299,7 +305,7 @@ footer
 }
 #social_icon ul li 
 {
-        padding-left: 10px; 
+        padding-left: 0px; 
         margin-top: 0px;
 }
 

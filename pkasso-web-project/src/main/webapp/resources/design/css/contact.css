@@ -3,6 +3,7 @@ body
    
     font-family: 'Lora', serif;
     font-weight: 400;
+    color: white;
 }
 
 .forum,.address_div{
@@ -13,11 +14,23 @@ label{
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 18px;
-    
+   
 }
 
 .button{
     padding: 8px;
     color: #1C2C39;
     margin: 16px;
+}
+
+.forum,.address_div1{
+    margin: 20px 150px;
+}
+
+#div3{
+	margin-left: 160px;
+}
+
+#social_icon{
+	margin-left: 10px;
 }

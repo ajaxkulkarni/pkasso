@@ -108,13 +108,13 @@
                      
                 </div>
                         
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                  <p id="h1name">PRASHANT KULKARNI & ASSOCIATES</p>        
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <hr size="0">
                             </div>
-                            <div class="col-md-9 hdiv">
+                            <div class="col-md-10 hdiv">
                                 <p id="h2name">SHAPING EXCELLENCE SINCE 1992</p>
                             </div>
             
@@ -143,9 +143,9 @@
 
 
     <!-- Div trigger modal -->
-    
+
     <div class="projects_div" id="projects_div">
-    
+     <div class="col-md-10">
     	<c:forEach items="${categories}" var="category">
         <div class="project_sub_div">
                 <label class="project_label">${category.name}</label><br/>
@@ -158,7 +158,7 @@
         </div>
         </c:forEach>
     </div>
-    
+   
     <!-- End OF Div trigger modal -->
 
 	<c:forEach items="${categories}" var="category">
@@ -263,16 +263,14 @@
            </div>
            </div>
             </div>
-       
-       <footer class="container-fluid" id="div3">
+       </div>
+      <footer class="container-fluid" id="div3">
             <div class="row">
                 <div class="col-md-7 col-xs-12" id="con1">
-                <div class="footer">
                     <p>COPYRIGHT &copy; PRASHANT KULKARNI AND ASSOCIATES</p>
                 </div>
-                </div>
                     
-                <div class="col-md-4 col-xs-12 pull-right" id="social_icon">
+                <div class="col-md-4 col-xs-12 pull-left" id="social_icon">
     
                     <ul>
                         <div class="col-md-4 col-xs-12" id="con">
@@ -286,10 +284,9 @@
                     </ul>
                      
                 </div>
-            </div>
+            </div> 
             <!-- /.row -->
-        </footer>
-                
+        </footer>  
  </body>
 
 </html>
