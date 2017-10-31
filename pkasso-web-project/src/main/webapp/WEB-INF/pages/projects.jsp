@@ -153,7 +153,7 @@
                 	<img src="files/${project.slides[0].id}"  alt="resi1" data-toggle="modal" data-target="#${project.id}"  class="project_img"/>
                 </c:forEach>
                 <c:if test="${loggedIn}">
-                	<input type="button" class="project_label2" value="Add New" data-toggle="modal" data-target="#editModal" onclick="setCategory('${category.name}')">
+                	<input type="button" class="project_label2 button-bg" value="Add New" data-toggle="modal" data-target="#editModal" onclick="setCategory('${category.name}')">
     			</c:if>
         </div>
         </c:forEach>
@@ -174,7 +174,7 @@
                   <c:if test="${loggedIn}">
                   	<form action="delete" method="post">
                 		<input type="hidden" id= "projectId" name="projectId" value="${project.id}" />
-                		<input type="submit" value="Delete"/> 
+                		<input type="submit" class="button-bg" value="Delete"/> 
                 	</form>
                   </c:if>
                   <div class="modal-body">
@@ -251,9 +251,9 @@
                       		<td><input type="file" class="project_label2" name="files[0]" required="required"/>
                       		<div id="extraFiles">
                       		</div></td>
-                      		<td><input  id="addFiles" type="button" onclick="addFileControl()" class="project_label2" value="Add more Files.."/></td>
+                      		<td><input  id="addFiles" type="button" onclick="addFileControl()" class="project_label2 button-bg" value="Add more Files.."/></td>
                       	</tr>
-                      	<tr><td><input type="submit" class="project_label2" value="Save"/></td></tr>
+                      	<tr><td><input type="submit" class="project_label2 button-bg" value="Save"/></td></tr>
                       </table>
                 
                    </form>

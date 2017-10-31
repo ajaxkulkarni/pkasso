@@ -27,7 +27,7 @@
     overflow: auto;
     margin: 24px 110px;
     font-family: 'Lora', serif;
-    color: white;
+    /* color: white; */
 
 }
 
@@ -55,7 +55,7 @@
 
 .project_label2{
 	font-size:18px;
-	color: white;
+	/* color: white; */
  font-family: 'Lora', serif; 
 }
 
@@ -65,10 +65,16 @@
  font-family: 'Lora', serif; 
 }
 
-.modal-content{
-    background-color: rgba(0, 0, 0, 0.97);
-    border: 1px solid rgba(255, 255, 255, 0.54);
+.button-bg {
+	background-color: #32CD32;
+	border-color: #32CD32;
+	border: 0;
+}
 
+.modal-content{
+    /* background-color: rgba(0, 0, 0, 0.97); */
+    border: 1px solid rgba(255, 255, 255, 0.54);
+	color: black;
 }
 
 
@@ -77,7 +83,7 @@
     margin-top:10px;
     font-size:18px;
     font-family: 'Lora', serif;
-    color: white;
+    /* color: white; */
     font-weight: 300;
 }
 
@@ -87,7 +93,7 @@
     font-size:24px;
     text-align: center;
     font-family: 'Lora', serif;
-    color: white;
+    /* color: white; */
 }
 
 
